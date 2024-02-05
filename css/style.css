@@ -1467,8 +1467,9 @@ section {
     flex-direction: column;
   }
 
-  .links li {
+  .links > li > a {
     margin-block: 15px;
+    display: block;
   }
 
   .links li:not(:last-child) {
@@ -1478,6 +1479,10 @@ section {
   .links a:hover {
     text-decoration: none;
     color: var(--primary-color);
+  }
+
+  .health {
+    order: -1;
   }
 }
 
