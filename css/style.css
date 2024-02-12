@@ -1124,8 +1124,8 @@ section {
 .emergency {
   min-height: 40vh;
   background-color: var(--light-gray);
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .emergency h3 {
@@ -1134,21 +1134,24 @@ section {
   text-transform: uppercase;
   font-family: var(--ff-libre);
   font-weight: var(--fw-700);
+  margin-block-end: 20px;
 }
 
-.emergency p {
-  font-size: 3rem;
+.emergencies {
+  font-size: 4rem;
 
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+
+  gap: 2rem;
 }
 
-.emergency p > a {
-  color: #fff;
+.emergencies > a {
+  font-size: var(--fs-1);
   display: flex;
   align-items: center;
-  gap: 1rem;
-  color: var(--black);
+  color: var(--primary-color);
+  gap: 2rem;
 }
 
 .emergency p a > i {
@@ -1220,6 +1223,13 @@ section {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   outline: none;
+  font-size: 2rem;
+}
+
+.file {
+  color: teal;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .form .btn {
